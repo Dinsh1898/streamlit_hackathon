@@ -74,3 +74,18 @@ with col1_ans:
 with col2_ans:
     if st.button(thumbs_down):
         display_box_ans.error("You clicked thumbs down!")
+
+st.write("---")
+# Next and Previous buttons
+col_prev, col_next = st.columns(2)
+
+prev_button = col_prev.button("Previous")
+next_button = col_next.button("Next")
+
+if prev_button:
+    st.write("Previous button clicked")
+    # Add your logic for going to the previous question or answer here
+
+if next_button:
+    st.write("Next button clicked")
+    # Add your logic for going to the next question or answer
